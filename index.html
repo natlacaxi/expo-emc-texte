@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exposé EMC — Sea Shepherd</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f8f7f2;
+    --text: #1a1a1a;
+    --accent: #0d6e63;
+    --accent-light: #e8f5f3;
+    --border: #c8dbd8;
+    --muted: #5a6e6b;
+    --heading: #0a4a43;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.9;
+    padding: 0;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: #061a17;
+    color: #f0f4f3;
+    padding: 56px 60px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 5px;
+    background: linear-gradient(90deg, #0d9488, #14b8a6, #5eead4);
+  }
+  header .label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: .85rem; letter-spacing: .4em; text-transform: uppercase;
+    color: #14b8a6; margin-bottom: 16px;
+  }
+  header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem; letter-spacing: .08em;
+    line-height: 1; color: #fff;
+    text-shadow: 0 0 60px rgba(20,184,166,.4);
+    margin-bottom: 10px;
+  }
+  header h1 span { color: #14b8a6; }
+  header .subtitle {
+    font-size: 1rem; font-style: italic; font-weight: 300;
+    color: #8fb8b3; letter-spacing: .05em;
+  }
+  header .authors {
+    margin-top: 20px; font-size: .82rem; letter-spacing: .2em;
+    text-transform: uppercase; color: #5e8a85;
+  }
+
+  /* ── MAIN ── */
+  main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 64px 40px 80px;
+  }
+
+  /* ── SECTION ── */
+  section { margin-bottom: 52px; }
+
+  .section-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: .78rem; letter-spacing: .35em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 8px;
+  }
+
+  h2 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 1.55rem; font-weight: 600;
+    color: var(--heading); margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  p { margin-bottom: 16px; color: var(--text); }
+
+  /* ── INTRO SPECIAL ── */
+  .intro p:first-child {
+    font-size: 1.12rem; font-style: italic; font-weight: 300;
+    color: #2a4a47;
+    padding: 20px 24px;
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+  }
+
+  /* ── LISTE ── */
+  ul { padding-left: 0; list-style: none; margin-bottom: 16px; }
+  ul li {
+    padding: 10px 14px 10px 46px;
+    margin-bottom: 8px;
+    background: var(--accent-light);
+    border-radius: 6px;
+    position: relative;
+    font-size: .97rem;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: '▸';
+    position: absolute; left: 16px; top: 10px;
+    color: var(--accent); font-size: 1rem;
+  }
+  ul li strong { color: var(--heading); }
+
+  /* ── QUOTE ── */
+  blockquote {
+    margin: 24px 0;
+    padding: 18px 24px;
+    border-left: 4px solid var(--accent);
+    background: var(--accent-light);
+    border-radius: 0 8px 8px 0;
+    font-style: italic; font-weight: 300;
+    color: #2a4a47; font-size: 1.02rem;
+    line-height: 1.75;
+  }
+
+  /* ── CONCLUSION ── */
+  .conclusion {
+    background: #061a17;
+    color: #d0e8e4;
+    padding: 36px 40px;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+  .conclusion h2 {
+    color: #5eead4; border-bottom-color: rgba(94,234,212,.2);
+    font-size: 1.4rem; margin-bottom: 18px;
+  }
+  .conclusion p { color: #b0d0cc; margin-bottom: 12px; }
+  .conclusion p:last-child { margin-bottom: 0; }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center; padding: 28px 20px;
+    font-size: .8rem; letter-spacing: .12em; text-transform: uppercase;
+    color: #9ab0ac; border-top: 1px solid var(--border);
+  }
+
+  @media print {
+    header { background: #061a17 !important; -webkit-print-color-adjust: exact; }
+    .intro p:first-child, ul li, blockquote { -webkit-print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="label">Exposé EMC · Lycée Albert Calmette · Classe 208</div>
+  <h1>☠ SEA <span>SHEPHERD</span></h1>
+  <div class="subtitle">Des bergers des mers aux méthodes radicales</div>
+  <div class="authors">Julian de FREITAS-TRICOIRE &nbsp;·&nbsp; Anton JOYEUX &nbsp;·&nbsp; 208</div>
+</header>
+
+<main>
+
+  <!-- INTRODUCTION -->
+  <section class="intro">
+    <div class="section-label">Introduction</div>
+    <h2>Introduction</h2>
+    <p>Imaginez un navire arborant un pavillon de pirate, sillonnant les mers glacées de l'Antarctique pour se dresser face à des baleiniers. Ce n'est pas une scène de film : c'est le quotidien de Sea Shepherd, l'une des organisations de protection marine les plus radicales et les plus controversées au monde. Aujourd'hui, nous allons vous présenter cette ONG, ses origines, ses combats, ses méthodes, et les débats qu'elle suscite.</p>
+  </section>
+
+  <!-- PARTIE I -->
+  <section>
+    <div class="section-label">Partie I</div>
+    <h2>I. Une organisation née d'une rupture</h2>
+    <p>Sea Shepherd est fondée en 1977 par Paul Watson, un militant écologiste canadien. Watson était auparavant membre fondateur de Greenpeace, mais il s'en sépare, estimant que l'organisation n'allait pas assez loin dans l'action directe. Il crée alors la Earthforce Environmental Society à Vancouver, qui deviendra rapidement la Sea Shepherd Conservation Society.</p>
+    <p>L'objectif affiché dès le départ est clair : protéger la vie et la diversité dans les océans, en appliquant ce que Watson appelle la « non-violence agressive » — des actions percutantes, mais sans jamais blesser personne.</p>
+    <p>Dès 1978, l'association acquiert son premier navire, le Sea Shepherd, et commence à bâtir ce qui deviendra une véritable flotte militante.</p>
+  </section>
+
+  <!-- PARTIE II -->
+  <section>
+    <div class="section-label">Partie II</div>
+    <h2>II. Les combats de Sea Shepherd</h2>
+    <p>Sea Shepherd mène des campagnes sur plusieurs fronts :</p>
+    <ul>
+      <li><strong>La chasse à la baleine :</strong> c'est le combat le plus médiatisé. L'organisation s'oppose aux flottes japonaise, norvégienne et islandaise, qu'elle accuse de contourner le moratoire sur la chasse commerciale à la baleine en vigueur depuis 1986. Des campagnes comme Opération Léviathan ou Opération Migaloo ont vu des navires se confronter physiquement aux baleiniers en Antarctique.</li>
+      <li><strong>Le massacre des globicéphales aux îles Féroé :</strong> chaque été, des centaines de dauphins-pilotes sont rabattus vers les côtes féroïennes et tués dans ce que les habitants appellent le Grindadráp. Sea Shepherd est présente depuis 2010 pour dénoncer et perturber cette pratique.</li>
+      <li><strong>La pêche illégale :</strong> l'organisation collabore avec plusieurs gouvernements africains — Gabon, Liberia, Tanzanie, Sénégal — pour patrouiller dans leurs eaux et arrêter les navires braconniers. La traque du Thunder, navire pirate pourchassé pendant 110 jours avant de couler, est l'une de leurs actions les plus spectaculaires.</li>
+      <li><strong>La protection des requins,</strong> des dauphins dans le golfe de Gascogne, des phoques au Canada, et du thon rouge en Méditerranée complètent leur champ d'action.</li>
+    </ul>
+  </section>
+
+  <!-- PARTIE III -->
+  <section>
+    <div class="section-label">Partie III</div>
+    <h2>III. Des méthodes qui font débat</h2>
+    <p>Sea Shepherd ne se contente pas de manifester : elle agit. Sabordages de navires baleiniers dans des ports, épéronnages en haute mer, jets d'acide butyrique (une substance nauséabonde rendant la viande de baleine inutilisable), usage de drones de surveillance, blocage d'hélices avec des cordes...</p>
+    <p>Ces méthodes ont valu à l'organisation d'être qualifiée d'organisation « écoterroriste » par le FBI en 2002, et de « pirates » par un juge américain en 2013. Le Japon a longtemps été son adversaire principal, avant qu'un accord soit signé en 2016 avec la branche américaine.</p>
+    <p>Sea Shepherd se défend en affirmant que ses actions sont légitimées par les conventions internationales de protection de la nature, et que la violence symbolique est parfois nécessaire face à des destructions massives et légalement tolérées.</p>
+  </section>
+
+  <!-- PARTIE IV -->
+  <section>
+    <div class="section-label">Partie IV</div>
+    <h2>IV. Organisation et ressources</h2>
+    <p>L'ONG est basée à Friday Harbor, dans l'État de Washington. Son budget annuel est d'environ 20 millions de dollars, financé exclusivement par des dons — de particuliers, d'entreprises, ou de célébrités comme Brigitte Bardot, Leonardo DiCaprio ou Pamela Anderson.</p>
+    <p>Sa flotte comprend plusieurs navires emblématiques, dont le Steve Irwin, le Sam Simon (offert par le co-créateur des Simpson), ou encore le récent Allankay, un ancien palangrier reconverti acquis en 2022.</p>
+    <p>En France, la branche nationale affecte 93 % de ses recettes aux actions directes — l'un des taux les plus élevés parmi les ONG françaises.</p>
+  </section>
+
+  <!-- PARTIE V -->
+  <section>
+    <div class="section-label">Partie V</div>
+    <h2>V. Une organisation divisée</h2>
+    <p>En décembre 2022, une scission majeure se produit. Paul Watson est évincé du conseil d'administration de Sea Shepherd Global, à l'initiative de plusieurs directeurs souhaitant adopter une stratégie plus légaliste, en rupture avec les actions directes. Les branches française, britannique et brésilienne refusent ce tournant et se séparent pour fonder Sea Shepherd Origins, restée fidèle à la philosophie d'origine de Watson.</p>
+  </section>
+
+  <!-- CONCLUSION -->
+  <section>
+    <div class="section-label">Conclusion</div>
+    <div class="conclusion">
+      <h2>Conclusion</h2>
+      <p>Sea Shepherd incarne une tension fondamentale dans l'activisme environnemental : jusqu'où peut-on aller pour défendre la nature ? Radicale dans ses méthodes, mais souvent efficace dans ses résultats, elle oblige à questionner les limites de l'action légale face à l'urgence écologique. Quelle que soit l'opinion que l'on en a, Sea Shepherd a su mettre les océans — et leur destruction — au cœur du débat public mondial.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Julian de FREITAS-TRICOIRE &nbsp;·&nbsp; Anton JOYEUX &nbsp;·&nbsp; Classe 208 &nbsp;·&nbsp; Lycée Albert Calmette
+</footer>
+
+</body>
+</html>
